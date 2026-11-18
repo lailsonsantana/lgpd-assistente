@@ -1,0 +1,186 @@
+[
+  {
+    "pergunta": "O que é dado pessoal?",
+    "resposta": "É qualquer informação relacionada a uma pessoa natural identificada ou identificável, ou seja, que permita saber quem ela é, direta ou indiretamente (Art. 5º, I da Lei 13.709/2018)."
+  },
+  {
+    "pergunta": "O que é dado pessoal sensível?",
+    "resposta": "É o dado pessoal sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, saúde, vida sexual, dado genético ou biométrico vinculado a uma pessoa (Art. 5º, II). Esse tipo de dado tem regras mais restritas de tratamento, previstas no Art. 11."
+  },
+  {
+    "pergunta": "Quem é o titular dos dados?",
+    "resposta": "É a pessoa natural a quem se referem os dados tratados, como um cliente, um funcionário ou um candidato a vaga (Art. 5º, V)."
+  },
+  {
+    "pergunta": "O que significa tratamento de dados pessoais?",
+    "resposta": "É qualquer operação feita com dados pessoais, como coletar, armazenar, consultar, usar, compartilhar, transmitir ou eliminar (Art. 5º, X). Basta guardar a ficha de cadastro de um cliente para estar tratando dados."
+  },
+  {
+    "pergunta": "O que é anonimização de dados?",
+    "resposta": "É usar meios técnicos razoáveis e disponíveis para que um dado perca a possibilidade de ser associado, direta ou indiretamente, a uma pessoa (Art. 5º, XI). Dado anonimizado não é considerado dado pessoal, salvo se o processo puder ser revertido com esforços razoáveis (Art. 12)."
+  },
+  {
+    "pergunta": "O que é consentimento na LGPD?",
+    "resposta": "É a manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados para uma finalidade determinada (Art. 5º, XII)."
+  },
+  {
+    "pergunta": "O que é o controlador de dados?",
+    "resposta": "É a pessoa ou empresa a quem cabe decidir como e para que os dados pessoais serão tratados (Art. 5º, VI). Normalmente, a empresa que decide coletar e usar os dados de seus clientes e funcionários é a controladora."
+  },
+  {
+    "pergunta": "O que é o operador de dados?",
+    "resposta": "É quem trata dados pessoais em nome do controlador, seguindo as instruções dele (Art. 5º, VII e Art. 39). Um fornecedor de sistema de gestão ou de hospedagem que processa os dados da empresa é um exemplo comum."
+  },
+  {
+    "pergunta": "O que faz o encarregado de dados, também chamado de DPO?",
+    "resposta": "É a pessoa indicada para ser o canal de comunicação entre a empresa, os titulares e a ANPD (Art. 5º, VIII). Ele aceita reclamações e pedidos dos titulares, recebe comunicações da ANPD e orienta funcionários e contratados sobre boas práticas (Art. 41, §2º)."
+  },
+  {
+    "pergunta": "Toda empresa precisa indicar um encarregado de dados?",
+    "resposta": "Pela regra geral do Art. 41, o controlador deve indicar um encarregado e divulgar publicamente seu nome e contato. A ANPD dispensou dessa indicação os agentes de tratamento de pequeno porte que não fazem tratamento de alto risco, mas eles devem manter um canal de comunicação com os titulares (Resolução CD/ANPD nº 2/2022)."
+  },
+  {
+    "pergunta": "Quais são os princípios da LGPD?",
+    "resposta": "Segundo o Art. 6º, o tratamento deve respeitar a boa-fé e os princípios de finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não discriminação e responsabilização e prestação de contas."
+  },
+  {
+    "pergunta": "O que é o princípio da finalidade?",
+    "resposta": "Os dados só podem ser tratados para propósitos legítimos, específicos e explícitos, informados ao titular, sem uso posterior incompatível com essas finalidades (Art. 6º, I)."
+  },
+  {
+    "pergunta": "O que é o princípio da necessidade?",
+    "resposta": "O tratamento deve se limitar ao mínimo necessário para cumprir a finalidade, usando apenas dados pertinentes, proporcionais e não excessivos (Art. 6º, III). Na prática, não se deve coletar dado que o negócio não precisa."
+  },
+  {
+    "pergunta": "O que é o princípio da transparência?",
+    "resposta": "O titular tem direito a informações claras, precisas e facilmente acessíveis sobre o tratamento e sobre os agentes que o realizam, respeitados os segredos comercial e industrial (Art. 6º, VI)."
+  },
+  {
+    "pergunta": "O que significa responsabilização e prestação de contas?",
+    "resposta": "A empresa deve conseguir demonstrar que adotou medidas eficazes para cumprir a lei e proteger os dados, incluindo a eficácia dessas medidas (Art. 6º, X). Guardar registros e documentos ajuda a fazer essa comprovação."
+  },
+  {
+    "pergunta": "Quais são as bases legais para tratar dados pessoais?",
+    "resposta": "São as hipóteses do Art. 7º que autorizam o tratamento, como consentimento, cumprimento de obrigação legal, execução de contrato, exercício regular de direitos em processos, proteção da vida, tutela da saúde, legítimo interesse e proteção do crédito, entre outras. Todo tratamento precisa se encaixar em uma delas."
+  },
+  {
+    "pergunta": "Como o consentimento precisa ser dado para ser válido?",
+    "resposta": "Deve ser livre, informado e inequívoco e referir-se a finalidades determinadas, pois autorizações genéricas são nulas (Art. 5º, XII e Art. 8º, §4º). Cabe à empresa provar que o obteve de forma correta e, se for dado por escrito em contrato, ele deve constar em cláusula destacada (Art. 8º, §§1º e 2º)."
+  },
+  {
+    "pergunta": "O consentimento é sempre obrigatório para usar dados pessoais?",
+    "resposta": "Não. O consentimento é apenas uma das bases legais do Art. 7º, e outras hipóteses, como obrigação legal ou execução de contrato, dispensam o consentimento. Mesmo assim, a empresa continua obrigada a respeitar os princípios e os direitos do titular (Art. 7º, §6º)."
+  },
+  {
+    "pergunta": "O que é a base legal de execução de contrato?",
+    "resposta": "Permite tratar dados quando forem necessários para executar um contrato do qual o titular faz parte, ou procedimentos preliminares a ele pedidos pelo titular (Art. 7º, V). Vale apenas para os dados realmente necessários a esse contrato."
+  },
+  {
+    "pergunta": "O que é o legítimo interesse e quando ele pode ser usado?",
+    "resposta": "É a base legal que permite tratar dados para atender a interesses legítimos da empresa ou de terceiros, exceto quando prevalecerem os direitos e liberdades do titular (Art. 7º, IX e Art. 10). Só podem ser usados os dados estritamente necessários e a empresa deve ser transparente; se a base serve ou não em cada situação depende do caso, e esta orientação não substitui assessoria jurídica."
+  },
+  {
+    "pergunta": "Quais bases legais valem para dados pessoais sensíveis?",
+    "resposta": "O Art. 11 é mais restrito: exige consentimento específico e destacado para finalidades específicas, ou admite tratamento sem consentimento apenas quando indispensável em hipóteses como obrigação legal, exercício regular de direitos, proteção da vida e tutela da saúde por profissionais ou serviços de saúde. O legítimo interesse não consta nessa lista."
+  },
+  {
+    "pergunta": "Quais são os direitos do titular dos dados?",
+    "resposta": "O Art. 18 garante ao titular, mediante requerimento ao agente de tratamento: confirmação de que há tratamento, acesso aos dados, correção de dados incompletos, inexatos ou desatualizados, anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei, portabilidade, eliminação dos dados tratados com consentimento, informação sobre com quem os dados foram compartilhados, informação sobre a possibilidade de não consentir e revogação do consentimento."
+  },
+  {
+    "pergunta": "Em quanto tempo a empresa deve responder a um pedido de acesso aos dados?",
+    "resposta": "Segundo o Art. 19, a confirmação de existência ou o acesso aos dados deve ser dado imediatamente em formato simplificado, ou em até 15 dias por declaração clara e completa. Os agentes de pequeno porte têm prazo em dobro para essa declaração completa (Resolução CD/ANPD nº 2/2022), e o atendimento deve ser gratuito (Art. 18, §5º)."
+  },
+  {
+    "pergunta": "Como o titular pode revogar o consentimento?",
+    "resposta": "Pode fazê-lo a qualquer momento, por manifestação expressa, em procedimento gratuito e facilitado (Art. 8º, §5º e Art. 18, IX). O tratamento já feito com base no consentimento anterior continua válido, enquanto não houver pedido de eliminação dos dados."
+  },
+  {
+    "pergunta": "O titular pode pedir a revisão de uma decisão tomada por sistema automatizado?",
+    "resposta": "Sim. O Art. 20 garante o direito de solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado que afetem seus interesses, e a empresa deve fornecer informações claras sobre os critérios usados, respeitados os segredos comercial e industrial."
+  },
+  {
+    "pergunta": "Que medidas de segurança a LGPD exige das empresas?",
+    "resposta": "O Art. 46 exige medidas técnicas e administrativas aptas a proteger os dados contra acessos não autorizados e contra situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou tratamento inadequado. A lei não lista ferramentas específicas; o nível adequado depende dos riscos e dos dados tratados."
+  },
+  {
+    "pergunta": "O que é um incidente de segurança com dados pessoais?",
+    "resposta": "É um evento adverso confirmado que viola a confidencialidade, a integridade, a disponibilidade ou a autenticidade dos dados pessoais, como um vazamento ou um acesso indevido (Resolução CD/ANPD nº 15/2024). Pelo Art. 48, o controlador deve comunicar a ANPD e os titulares quando o incidente puder acarretar risco ou dano relevante a eles."
+  },
+  {
+    "pergunta": "Qual é o prazo para comunicar um incidente de segurança?",
+    "resposta": "Pela Resolução CD/ANPD nº 15/2024, a comunicação à ANPD e aos titulares deve ser feita em 3 dias úteis, contados do conhecimento de que o incidente afetou dados pessoais, podendo ser complementada em até 20 dias úteis. Agentes de pequeno porte têm esses prazos em dobro."
+  },
+  {
+    "pergunta": "O que a comunicação de um incidente deve informar?",
+    "resposta": "Conforme o Art. 48, §1º, deve descrever a natureza dos dados afetados, os titulares envolvidos, as medidas de segurança usadas, os riscos do incidente, os motivos da demora se a comunicação não foi imediata e as medidas adotadas ou que serão adotadas para reverter ou reduzir os efeitos."
+  },
+  {
+    "pergunta": "Quem fiscaliza o cumprimento da LGPD?",
+    "resposta": "A Agência Nacional de Proteção de Dados (ANPD), que zela pela proteção dos dados, edita normas, fiscaliza e aplica as sanções administrativas (Art. 55-J). O titular também pode peticionar à ANPD contra o controlador (Art. 18, §1º)."
+  },
+  {
+    "pergunta": "Quais são as sanções previstas na LGPD?",
+    "resposta": "O Art. 52 prevê advertência com prazo para correção, multa simples, multa diária, publicização da infração, bloqueio e eliminação dos dados. Também prevê suspensão parcial do banco de dados e suspensão da atividade de tratamento, ambas por até 6 meses prorrogáveis, e proibição parcial ou total das atividades de tratamento, estas três só aplicáveis depois de ao menos uma das sanções anteriores (Art. 52, §6º)."
+  },
+  {
+    "pergunta": "Qual é o valor máximo da multa da LGPD?",
+    "resposta": "A multa simples pode chegar a 2% do faturamento da empresa, grupo ou conglomerado no Brasil no último exercício, sem contar tributos, limitada a R$ 50 milhões por infração (Art. 52, II). O valor concreto considera critérios como gravidade, boa-fé, condição econômica e adoção de boas práticas (Art. 52, §1º)."
+  },
+  {
+    "pergunta": "A empresa pode ser obrigada a indenizar o titular por mau uso de dados?",
+    "resposta": "Sim. O controlador ou operador que causar dano patrimonial, moral, individual ou coletivo ao violar a legislação de proteção de dados é obrigado a repará-lo (Art. 42). Em certos casos, operador e controladores respondem solidariamente (Art. 42, §1º)."
+  },
+  {
+    "pergunta": "Posso compartilhar dados pessoais com outras empresas?",
+    "resposta": "Só se houver uma base legal do Art. 7º e respeitando finalidade e necessidade. Se o dado foi obtido por consentimento, compartilhá-lo com outros controladores exige consentimento específico para isso, salvo hipóteses de dispensa previstas na lei (Art. 7º, §5º), e o titular deve ser informado sobre o uso compartilhado (Art. 9º, V)."
+  },
+  {
+    "pergunta": "O que é transferência internacional de dados e quando ela é permitida?",
+    "resposta": "É o envio de dados pessoais para outro país ou organismo internacional (Art. 5º, XV). O Art. 33 só a permite em hipóteses como destino com grau de proteção adequado, garantias oferecidas pelo controlador (como cláusulas contratuais específicas ou cláusulas-padrão) ou consentimento específico e em destaque do titular. Esta orientação não substitui assessoria jurídica."
+  },
+  {
+    "pergunta": "O que a LGPD diz sobre o tratamento de dados de crianças e adolescentes?",
+    "resposta": "O Art. 14 determina que o tratamento seja feito em seu melhor interesse. Para crianças, o §1º prevê consentimento específico e em destaque de pelo menos um dos pais ou do responsável legal, e a ANPD entende que outras bases legais também podem ser usadas se o melhor interesse prevalecer (Enunciado CD/ANPD nº 1/2023). Esta orientação não substitui assessoria jurídica."
+  },
+  {
+    "pergunta": "Que informações devo divulgar ao tratar dados de crianças?",
+    "resposta": "O Art. 14, §2º manda manter pública a informação sobre os tipos de dados coletados, a forma de uso e os procedimentos para exercer os direitos do Art. 18. Essas informações devem ser dadas de forma simples, clara e acessível (Art. 14, §6º)."
+  },
+  {
+    "pergunta": "A LGPD vale para pequenas empresas, microempresas e MEI?",
+    "resposta": "Sim. A lei vale para qualquer pessoa ou empresa que trate dados pessoais, de qualquer porte, salvo as exceções do Art. 4º, como o uso particular e não econômico por pessoa natural. A ANPD criou regras simplificadas para pequenos negócios, mas elas não afastam a lei (Resolução CD/ANPD nº 2/2022)."
+  },
+  {
+    "pergunta": "Quem é considerado agente de tratamento de pequeno porte?",
+    "resposta": "Pela Resolução CD/ANPD nº 2/2022, são microempresas, empresas de pequeno porte (incluindo MEI), startups e organizações privadas sem fins lucrativos, entre outros, que tratam dados pessoais. O tratamento diferenciado não vale para quem faz tratamento de alto risco nem para empresas do Simples Nacional com receita bruta acima de R$ 4,8 milhões (R$ 16 milhões para startups)."
+  },
+  {
+    "pergunta": "O que é tratamento de alto risco para a ANPD?",
+    "resposta": "É o tratamento que atende a pelo menos um critério geral (larga escala ou possibilidade de afetar significativamente direitos fundamentais) e a pelo menos um critério específico, como tecnologias inovadoras, vigilância de áreas públicas, decisões automatizadas ou uso de dados sensíveis ou de crianças, adolescentes e idosos (Resolução CD/ANPD nº 2/2022). Nesses casos o regime simplificado não se aplica, e esta orientação não substitui assessoria jurídica para enquadrar uma situação concreta."
+  },
+  {
+    "pergunta": "O que a pequena empresa pode fazer de forma simplificada na LGPD?",
+    "resposta": "Pela Resolução CD/ANPD nº 2/2022, pode manter registro simplificado das operações de tratamento, não é obrigada a indicar encarregado (mas deve oferecer um canal de comunicação com os titulares) e tem prazo em dobro para atender titulares e comunicar incidentes. Indicar um encarregado continua sendo considerado boa prática."
+  },
+  {
+    "pergunta": "O que continua obrigatório para a pequena empresa mesmo no regime simplificado?",
+    "resposta": "Continuam valendo a exigência de base legal, os princípios do Art. 6º, os direitos dos titulares do Art. 18 e a adoção de medidas essenciais de segurança, administrativas e técnicas. A comunicação de incidentes de risco ou dano relevante também segue obrigatória, apenas com prazos diferenciados, e a ANPD pode exigir obrigações dispensadas conforme a natureza e o volume das operações."
+  },
+  {
+    "pergunta": "O que é uma política de privacidade e o que ela deve informar?",
+    "resposta": "É o documento ou aviso que explica ao titular, de forma clara e acessível, como seus dados são tratados; a LGPD não usa esse nome, mas exige as informações do Art. 9º. Entre elas estão a finalidade específica, a forma e a duração do tratamento, a identificação e o contato do controlador, o uso compartilhado de dados, as responsabilidades dos agentes e os direitos do titular."
+  },
+  {
+    "pergunta": "O que é o registro das operações de tratamento de dados?",
+    "resposta": "É o registro que controlador e operador devem manter das operações de tratamento de dados pessoais que realizam, especialmente quando baseadas em legítimo interesse (Art. 37). Agentes de pequeno porte podem fazê-lo de forma simplificada (Resolução CD/ANPD nº 2/2022)."
+  },
+  {
+    "pergunta": "O que é o relatório de impacto à proteção de dados pessoais?",
+    "resposta": "É a documentação do controlador que descreve processos de tratamento que podem gerar riscos às liberdades civis e aos direitos fundamentais, com as medidas para reduzir esses riscos (Art. 5º, XVII). A ANPD pode determinar sua elaboração (Art. 38) e pode pedi-lo quando o tratamento se basear em legítimo interesse (Art. 10, §3º)."
+  },
+  {
+    "pergunta": "Por quanto tempo posso guardar dados pessoais?",
+    "resposta": "A lei não fixa um prazo único: os dados devem ser eliminados quando o tratamento termina, ou seja, quando a finalidade foi alcançada, os dados deixaram de ser necessários, acabou o período de tratamento, o titular pediu ou a ANPD determinou (Arts. 15 e 16). Pode haver conservação para cumprir obrigação legal ou regulatória, entre outras hipóteses do Art. 16, e o prazo concreto depende do caso."
+  }
+]

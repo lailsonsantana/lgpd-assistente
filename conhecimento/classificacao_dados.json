@@ -1,0 +1,83 @@
+{
+  "nome": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "rg": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "cpf": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "cnh": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "titulo de eleitor": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "assinatura": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "estado civil": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "salario": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "cnpj": { "categoria": "não pessoal", "referencia": "Art. 5º, I e V" },
+  "razao social": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e V",
+    "orientacao": "Pergunte se a razão social é de uma sociedade (pessoa jurídica) ou se é o nome civil de um empresário individual ou MEI. No segundo caso, ela identifica uma pessoa natural e é dado pessoal."
+  },
+  "email": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "email corporativo": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I",
+    "orientacao": "Pergunte se o endereço identifica uma pessoa (ex.: nome.sobrenome@empresa) ou se é uma caixa genérica da empresa (ex.: contato@empresa). Se identifica uma pessoa natural, é dado pessoal."
+  },
+  "telefone": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "endereco": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "data de nascimento": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "dados bancarios": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "cartao de credito": { "categoria": "pessoal", "referencia": "Art. 5º, I" },
+  "ip": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I",
+    "orientacao": "Pergunte se o IP fica registrado junto a algum dado que permita identificar a pessoa (conta, cadastro, login, logs de acesso) ou se é usado apenas de forma agregada, sem como ligá-lo a alguém."
+  },
+  "cookies": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I",
+    "orientacao": "Pergunte para que servem os cookies: se identificam ou rastreiam um usuário ou navegador específico (ex.: publicidade, análise individual) ou se são apenas técnicos e não permitem identificar a pessoa."
+  },
+  "geolocalizacao": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I",
+    "orientacao": "Pergunte se a localização está vinculada a uma pessoa ou dispositivo identificável (ex.: app do cliente, entregador) ou se é agregada, sem identificar ninguém."
+  },
+  "historico de navegacao": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se o histórico está ligado a um usuário identificado ou identificável (conta, cadastro) ou se é anônimo e agregado. Pergunte também se ele revela dado sensível, como saúde, religião ou opinião política."
+  },
+  "foto": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se a foto mostra uma pessoa identificável e se é apenas um registro de imagem ou se é usada para reconhecimento facial ou identificação automática. No segundo caso, pode ser dado biométrico sensível."
+  },
+  "video de camera de seguranca": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se as imagens captam pessoas identificáveis e se há reconhecimento facial ou outra identificação automática. Sem pessoas identificáveis, não é dado pessoal; com identificação automática, pode ser dado biométrico sensível."
+  },
+  "gravacao de voz": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se a voz permite identificar a pessoa e se a gravação é usada apenas como registro de atendimento ou para identificação por voz. Neste último caso, pode ser dado biométrico sensível."
+  },
+  "historico de compras": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se o histórico está vinculado a um cliente identificado (cadastro, CPF, e-mail) ou se é agregado sem identificação. Pergunte também se as compras revelam dado sensível, como medicamentos ou itens religiosos."
+  },
+  "curriculo": {
+    "categoria": "depende do contexto",
+    "referencia": "Art. 5º, I e II",
+    "orientacao": "Pergunte se o currículo traz informações sensíveis, como deficiência ou condição de saúde, religião, filiação sindical ou política ou origem racial. Se não traz, é dado pessoal comum; se traz, essas partes são sensíveis."
+  },
+  "dado de saude": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "atestado medico": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "biometria": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "impressao digital": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "dado genetico": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "origem racial": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "religiao": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "opiniao politica": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "filiacao sindical": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "vida sexual": { "categoria": "sensível", "referencia": "Art. 5º, II" },
+  "dado anonimizado": { "categoria": "não pessoal", "referencia": "Art. 5º, III e Art. 12" }
+}

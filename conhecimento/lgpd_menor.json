@@ -1,0 +1,18 @@
+[
+  {
+    "pergunta": "O que é dado pessoal?",
+    "resposta": "É qualquer informação relacionada a uma pessoa natural identificada ou identificável, ou seja, que permita saber quem ela é, direta ou indiretamente (Art. 5º, I da Lei 13.709/2018)."
+  },
+  {
+    "pergunta": "O que é o controlador de dados?",
+    "resposta": "É a pessoa ou empresa a quem cabe decidir como e para que os dados pessoais serão tratados (Art. 5º, VI). Normalmente, a empresa que decide coletar e usar os dados de seus clientes e funcionários é a controladora."
+  },
+  {
+    "pergunta": "O que é o princípio da necessidade?",
+    "resposta": "O tratamento deve se limitar ao mínimo necessário para cumprir a finalidade, usando apenas dados pertinentes, proporcionais e não excessivos (Art. 6º, III). Na prática, não se deve coletar dado que o negócio não precisa."
+  },
+  {
+    "pergunta": "Qual é o valor máximo da multa da LGPD?",
+    "resposta": "A multa simples pode chegar a 2% do faturamento da empresa, grupo ou conglomerado no Brasil no último exercício, sem contar tributos, limitada a R$ 50 milhões por infração (Art. 52, II). O valor concreto considera critérios como gravidade, boa-fé, condição econômica e adoção de boas práticas (Art. 52, §1º)."
+  }
+]
