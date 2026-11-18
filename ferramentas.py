@@ -25,6 +25,7 @@ TIPOS_PERMITIDOS = ", ".join(sorted(CLASSIFICACAO_DADOS.keys()))
     )
 )
 def classificar_dado(tipo_dado: str):
+    print("A ferramenta de classificacao de dados foi chamada com o parametro: {tipo_dado}")
     chave = tipo_dado.lower().strip()
 
     if chave in CLASSIFICACAO_DADOS:

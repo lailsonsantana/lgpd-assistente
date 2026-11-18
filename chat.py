@@ -158,6 +158,7 @@ def extrair_texto_execucao(resultado):
     return "\n".join(conteudo)
 
 async def executar_ferramentas(conexao_mcp, resposta, mensagens):
+    print("verificando se há ferramentas para executar...")
     ferramentas_para_executar = [passo for passo in resposta.steps if passo.type == "function_call"]
     if ferramentas_para_executar:
         for ferramenta in ferramentas_para_executar:
@@ -234,7 +235,7 @@ async def executar():
                 persona.extend(resposta.steps)                
 
                 if sucesso:
-                    print(f"🤖 tokens consumidos: {get_consumo_tokens(resposta)}")
+                    #print(f"🤖 tokens consumidos: {get_consumo_tokens(resposta)}")
                     
                     if not await executar_ferramentas(conexao_mcp, resposta, persona):
                         resposta = resposta.output_text

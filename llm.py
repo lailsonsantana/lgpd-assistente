@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 from google import genai
 import asyncio
-import json
 import os
 
 MODELO = "gemini-3.5-flash-lite"
@@ -65,7 +64,7 @@ async def executar():
         },
         {
             "type": "user_input",
-            "content": [{ "type": "text", "text": "O seu nome é ProgBot. Sempre se identifique com esse nome durante saudações"}]
+            "content": [{ "type": "text", "text": "O seu nome é LGPD Assistent. Sempre se identifique com esse nome durante saudações"}]
         },
         {
             "type": "user_input",
