@@ -160,6 +160,8 @@ def extrair_texto_execucao(resultado):
 async def executar_ferramentas(conexao_mcp, resposta, mensagens):
     print("verificando se há ferramentas para executar...")
     ferramentas_para_executar = [passo for passo in resposta.steps if passo.type == "function_call"]
+    status_classificador = None
+
     if ferramentas_para_executar:
         for ferramenta in ferramentas_para_executar:
             execucao = await conexao_mcp.call_tool(ferramenta.name, arguments = ferramenta.arguments)
@@ -176,7 +178,25 @@ async def executar_ferramentas(conexao_mcp, resposta, mensagens):
                 ]
             })
 
-    return ferramentas_para_executar != None and len(ferramentas_para_executar) > 0
+            if ferramenta.name == "classificar_dado":
+                try:
+                    status_execucao = await conexao_mcp.call_tool(
+                        "status_classificar_dado",
+                        arguments = {}
+                    )
+                    status_classificador = json.loads(
+                        extrair_texto_execucao(status_execucao)
+                    )
+                    print(
+                        "status classificar_dado: "
+                        f"executado={status_classificador.get('executado')}, "
+                        f"total={status_classificador.get('quantidade_execucoes')}"
+                    )
+                except Exception as e:
+                    print(f"não foi possível consultar o status da ferramenta: {e}")
+
+    houve_ferramentas = ferramentas_para_executar != None and len(ferramentas_para_executar) > 0
+    return houve_ferramentas, status_classificador
 
 async def executar():
     contexto = AsyncExitStack()
@@ -237,7 +257,13 @@ async def executar():
                 if sucesso:
                     #print(f"🤖 tokens consumidos: {get_consumo_tokens(resposta)}")
                     
-                    if not await executar_ferramentas(conexao_mcp, resposta, persona):
+                    houve_ferramentas, status_classificador = await executar_ferramentas(
+                        conexao_mcp,
+                        resposta,
+                        persona
+                    )
+
+                    if not houve_ferramentas:
                         resposta = resposta.output_text
 
                         break

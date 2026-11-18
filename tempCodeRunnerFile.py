@@ -1,0 +1,1 @@
+print(f"A ferramenta de classificacao de dados foi chamada com o parametro: {tipo_dado}")
