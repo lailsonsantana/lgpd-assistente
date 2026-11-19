@@ -1,9 +1,42 @@
 from chat import *
 from llm import *
 import asyncio
+from textwrap import fill, wrap
 
 MODELO_ASSISTENTE = "gemini-3.5-flash-lite"
 MODELO_JULGAMENTO = "gemini-3.1-flash-lite"
+
+def imprimir_campo(rotulo, texto):
+    print(f"{rotulo}:")
+    print(fill(str(texto), width=76, initial_indent="  ", subsequent_indent="  "))
+
+def imprimir_cartoes(cartoes):
+    largura_coluna = 60
+    metade = (len(cartoes) + 1) // 2
+    colunas = []
+
+    for indice, pergunta, resposta, resultado in cartoes:
+        linhas = [
+            f"Caso {indice:02}",
+            "Pergunta:",
+            *wrap(pergunta, width=largura_coluna - 2, initial_indent="  ", subsequent_indent="  "),
+            "Resposta avaliada:",
+            *wrap(resposta, width=largura_coluna - 2, initial_indent="  ", subsequent_indent="  "),
+            f"Resultado: {resultado}",
+        ]
+        colunas.append(linhas)
+
+    for indice in range(metade):
+        esquerda = colunas[indice]
+        direita = colunas[indice + metade] if indice + metade < len(colunas) else []
+        quantidade_linhas = max(len(esquerda), len(direita))
+
+        for linha in range(quantidade_linhas):
+            texto_esquerda = esquerda[linha] if linha < len(esquerda) else ""
+            texto_direita = direita[linha] if linha < len(direita) else ""
+            print(f"{texto_esquerda:<{largura_coluna}} | {texto_direita}")
+
+        print("=" * (largura_coluna * 2 + 3))
 
 async def iniciar_persona_julgamento(conhecimento):
     persona = [
@@ -44,7 +77,12 @@ async def testar_alucinacoes(llm, julgador):
         }
     ]
 
-    for alucinacao in alucinacoes:
+    print("\n" + "=" * 76)
+    print("🧪  TESTE DE ALUCINAÇÕES")
+    print("=" * 76)
+    cartoes = []
+
+    for indice, alucinacao in enumerate(alucinacoes, start=1):
         pergunta = alucinacao["pergunta"]
         resposta = alucinacao["resposta"]
 
@@ -57,15 +95,17 @@ async def testar_alucinacoes(llm, julgador):
         assert(sucesso == True)
         assert("NÃO ATENDE" in julgamento.output_text)    
 
-        print(f"=> Iniciando teste de alucinações ...")
-        print(f"👍👍 a resposta foi julgada INADEQUADA para a pergunta 👍👍")
+        cartoes.append((indice, pergunta, resposta, "INADEQUADA — como esperado"))
 
+    imprimir_cartoes(cartoes)
 
 async def testar_assistente(llm, conhecimento, assistente, julgador):
-    print(f"-")
-    print(f"-")
-    print(f"=> Iniciando teste do assistente ...")
-    for pergunta, _ in conhecimento:
+    print("\n" + "=" * 76)
+    print("🤖  TESTE DO ASSISTENTE")
+    print("=" * 76)
+    cartoes = []
+
+    for indice, (pergunta, _) in enumerate(conhecimento, start=1):
         sucesso, resposta = await obter_resposta(llm, assistente + [
             {
                 "type": "user_input",
@@ -76,7 +116,6 @@ async def testar_assistente(llm, conhecimento, assistente, julgador):
 
         resposta = resposta.output_text
 
-        print(f"julgando a resposta '{resposta}' para a pergunta '{pergunta}'")
         sucesso, julgamento = await obter_resposta(llm, julgador + [
             {
                 "type": "user_input",
@@ -86,7 +125,9 @@ async def testar_assistente(llm, conhecimento, assistente, julgador):
         assert(sucesso == True)
         assert("NÃO ATENDE" not in julgamento.output_text)    
 
-        print(f"👍👍 a resposta foi julgada ADEQUADA para a pergunta 👍👍")
+        cartoes.append((indice, pergunta, resposta, "ADEQUADA"))
+
+    imprimir_cartoes(cartoes)
 
 async def executar():
     iniciado, llm = await iniciar_llm()
