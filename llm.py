@@ -60,11 +60,11 @@ async def executar():
     mensagens = [
         {
             "type": "user_input",
-            "content": [{ "type": "text", "text": "Elabore uma resposta curta para uma saudação. Na sua resposta, você deve se identificar como um sistema especialista dedicado a ensinar programação orientada a objetos"}]
+            "content": [{ "type": "text", "text": "Elabore uma resposta curta para uma saudação. Na sua resposta, você deve se identificar como um sistema especialista na LGPD."}]
         },
         {
             "type": "user_input",
-            "content": [{ "type": "text", "text": "O seu nome é LGPD Assistent. Sempre se identifique com esse nome durante saudações"}]
+            "content": [{ "type": "text", "text": "O seu nome é LGPD Assistent. Sempre se identifique com esse nome durante as saudações"}]
         },
         {
             "type": "user_input",

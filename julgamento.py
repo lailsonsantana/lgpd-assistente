@@ -35,12 +35,12 @@ async def iniciar_persona_julgamento(conhecimento):
 async def testar_alucinacoes(llm, julgador):
     alucinacoes = [
         {
-            "pergunta": "O que é Programação Orientada a Objetos?",
-            "resposta": "É um tipo de pássaro que voa para o sul durante o inverno."
+            "pergunta": "Quais são as sanções previstas na LGPD?",
+            "resposta": "A lei trabalhista trata sobre disposições relacionadas a férias, jornada de trabalho e rescisão de contrato."
         },
         {
-            "pergunta": "O que é uma classe?",
-            "resposta": "É um tipo de comida que serve para alimentar pássaros."
+            "pergunta": "Posso compartilhar dados pessoais com outras empresas?",
+            "resposta": "A administração de empresas envolve estratégias de marketing, gestão financeira e desenvolvimento de produtos."
         }
     ]
 
@@ -57,10 +57,14 @@ async def testar_alucinacoes(llm, julgador):
         assert(sucesso == True)
         assert("NÃO ATENDE" in julgamento.output_text)    
 
+        print(f"=> Iniciando teste de alucinações ...")
         print(f"👍👍 a resposta foi julgada INADEQUADA para a pergunta 👍👍")
 
 
 async def testar_assistente(llm, conhecimento, assistente, julgador):
+    print(f"-")
+    print(f"-")
+    print(f"=> Iniciando teste do assistente ...")
     for pergunta, _ in conhecimento:
         sucesso, resposta = await obter_resposta(llm, assistente + [
             {
