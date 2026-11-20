@@ -158,7 +158,6 @@ def extrair_texto_execucao(resultado):
     return "\n".join(conteudo)
 
 async def executar_ferramentas(conexao_mcp, resposta, mensagens):
-    print("verificando se há ferramentas para executar...")
     ferramentas_para_executar = [passo for passo in resposta.steps if passo.type == "function_call"]
     status_classificador = None
 
